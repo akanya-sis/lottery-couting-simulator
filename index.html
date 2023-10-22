@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>複数の数字を合計する</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- js-cookie library -->
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/src/js.cookie.min.js"></script>
+</head>
+<body class="p-5">
+
+    <div class="form-group">
+        <input type="number" id="numberInput" class="form-control mb-2" placeholder="数字を入力">
+        <input type="text" id="labelInput" class="form-control" placeholder="ラベルを入力">
+    </div>
+    <button class="btn btn-primary mb-3" onclick="addButton()">ボタンを追加</button>
+
+    <div id="buttonsArea"></div>
+
+    <button class="btn btn-danger mb-3" onclick="clearTotal()">合計をクリア</button>
+    <hr>
+    <div>
+        合計: <span id="total">0</span>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
