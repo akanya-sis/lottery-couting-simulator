@@ -43,10 +43,7 @@ function addButton(labelValue, inputValue) {
 function clearTotal() {
     total = 0;
     $("#total").text(total);
-    $("#buttonsArea").empty();
-
-    Cookies.remove('total');
-    Cookies.remove('buttons');
+    updateCookies();
 }
 
 function updateCookies() {
@@ -75,5 +72,12 @@ $(document).ready(() => {
         for (let buttonData of buttonDataArray) {
             addButton(buttonData.label, buttonData.value);
         }
+    } else {
+        // 初期値のボタンを設定
+        addButton("5等", 200);
+        addButton("4等", 1000);
+        addButton("3等", 10000);
+        addButton("2等", 50000);
+        addButton("1等", 1000000);
     }
 });
