@@ -16,18 +16,23 @@
 </head>
 <body class="p-5">
 
-    <div class="form-group">
-        <input type="number" id="numberInput" class="form-control mb-2" placeholder="数字を入力">
-        <input type="text" id="labelInput" class="form-control" placeholder="ラベルを入力">
-    </div>
-    <button class="btn btn-primary mb-3" onclick="addButton()">ボタンを追加</button>
-
-    <div id="buttonsArea"></div>
-
-    <button class="btn btn-danger mb-3" onclick="clearTotal()">合計をクリア</button>
-    <hr>
-    <div>
-        合計: <span id="total">0</span>
+    <div class="row g-3">
+        <div class="col-md-5 col-lg-4">
+            <div class="form-group">
+                <input type="number" id="numberInput" class="form-control mb-2" placeholder="数字を入力">
+                <input type="text" id="labelInput" class="form-control" placeholder="ラベルを入力">
+                <button class="btn btn-primary mb-3" onclick="addButton()">ボタンを追加</button>
+            </div>
+        </div>
+    
+        <div class="col-md-5 col-lg-4">
+            <div>
+                合計: <span id="total">0</span>
+            </div>
+            <hr>
+            <div id="buttonsArea"></div>
+            <button class="btn btn-danger mb-3" onclick="clearTotal()">合計をクリア</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
